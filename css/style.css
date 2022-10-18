@@ -37,11 +37,53 @@ main {
     background-color: #f6f8f9;
 }
 /*lista*/
+.lista {
+    padding: 0 80px 0 80px;
+}
+
 .lable {
     display: inline-block;
+    font-size: 14px;
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
+}
+
+.arrow {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.arrow::before {
+    content: "\25BC";
+}
+
+.done::before {
+    content: "\2714";
+    padding: 0 3px;
+    font-size: 16px;
+    color: #64c0a9;
+    border: 1px solid #64c0a9;
+    border-radius: 50%;
+}
+
+.not-done::before {
+    content: "\2718";
+    padding: 0 3px;
+    font-size: 16px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 20px;
+    font-weight: 400;
 }
 
 li div {
