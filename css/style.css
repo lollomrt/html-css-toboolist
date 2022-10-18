@@ -7,7 +7,7 @@
 /* utilities */
 
 .container {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     background-color: white;
     border-radius: 20px;
@@ -49,6 +49,7 @@ button {
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 16px;
+    margin-right: 5px;
 }
 
 .add-task {
@@ -65,7 +66,7 @@ button {
 
 /*lista*/
 .lista {
-    padding: 0 80px 0 80px;
+    padding: 20px 80px 10px 80px;
 }
 
 .lable {
@@ -88,6 +89,10 @@ button {
 
 .arrow::before {
     content: "\25BC";
+}
+
+.done::before, .not-done::before {
+    margin: 0 10px 0 5px;
 }
 
 .done::before {
